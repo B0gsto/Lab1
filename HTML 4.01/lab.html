@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Formular anaf</title>
+<style type="text/css">
+ 
+
+</style>
+</head>
+<body>
+<form action="*">
+<table>
+<!-- I.Date de identificare a contribuabilului -->
+<tr>
+<td>
+    <table border="50" align="center" >
+    <tr>
+        <th valign = "top"  width = "4" height ="1" bgcolor = "green">I. Date de identificare a contribuabilului (ă, â, î, ș, ț)</th>
+        <td>
+            <ol>
+                <li>
+                    <ul>
+                        <li><label for="Nume" >Nume</label></li>
+                        <li><input name="Nume" id="Nume"></li>
+                        <li><label for="Prenume" >Prenume</label></li>
+                        <li><input name="Prenume" id="Prenume"></li>
+                        <li><label for="InitialaTatalui" >Initiala tatalui</label></li>
+                        <li><input name="InitialaTatalui" id="InitialaTatalui"></li>
+                        <li><label for="CNP" >Cod numeric personal / Numar de identificare fiscala</label></li>
+                        <li><input name="CNP" id="CNP"></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><label for="Strada" >Strada</label></li>
+                        <li><input name="Strada" id="Strada"></li>
+                        <li><label for="Nr" >Nr.</label></li>
+                        <li><input name="Nr" id="Nr"></li>
+                        <li><label for="Bloc" >Bloc</label></li>
+                        <li><input name="Bloc" id="Bloc"></li>
+                        <li><label for="Scara" >Scara</label></li>
+                        <li><input name="Scara" id="Scara"></li>
+                        <li><label for="Etaj" >Etaj</label></li>
+                        <li><input name="Etaj" id="Etaj"></li>
+                        <li><label for="Apartament" >Apartament</label></li>
+                        <li><input name="Apartament" id="Apartament"></li>
+                        <li><label for="Localitate" >Localitate</label></li>
+                        <li><input name="Localitate" id="Localitate"></li>
+                        <li><label for="CodPostal" >Cod postal</label></li>
+                        <li><input name="CodPostal" id="CodPostal"></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><label for="Email2" >Email</label></li>
+                        <li><input name="Email" id="Email2"></li>
+                        <li><label for="Telefon" >Telefon</label></li>
+                        <li><input name="Telefon" id="Telefon"></li>
+                        <li><label for="Fax" >Fax</label></li>
+                        <li><input name="Fax" id="Fax"></li>
+                    </ul>
+                </li>
+            </ol>
+        </td>
+    </tr>
+    </table>
+</td>
+</tr>
+<!-- II. Destinatia sumei reprezentand pana la... -->
+<tr>
+<td>
+    <table>
+<tr>
+    <th colspan="8"> II. Destinatia sumei reprezentand pana la 3,5% din impozitul anual
+        pentru sustinerea entitatiolr nonprofit care se infiinteza si
+        functioneaza in conditiile legii si a unitatiolr de cult, precum
+        acord de burse se infiinteza si functioneaza in conditiile legii si
+        a unitatilor de cult, precum si pentru acordarea de burse private,
+        confrom legii
+    </th>
+</tr>
+<tr>
+    <td>1.Bursă privată</td>
+    <td><input type="radio" name="Bursa privata" ></td>
+    <td>Contract nr./data</td>
+    <td><input name="Contract" ></td>
+    <td>Suma platita (lei)</td>
+    <td><input name="Suma" ></td>
+    <td>Documente de plata nr./data</td>
+    <td><input name="Documente" ></td>
+</tr>
+<tr>
+    <td>2.Sustinerea unei entitati nonprofit/unitatii de cult</td>
+    <td><input type="radio" name="Bursa privata" ></td>
+    <td>Denumirea entitatii nonprofit/unitate de cult</td>
+    <td><input name="Cod" ></td>
+    <td>Cont bancar (IBAN)</td>
+    <td><input name="Cont" ></td>
+    <td>Suma (lei)</td>
+    <td><input name="Suma" ></td>
+</tr>
+    </table>
+</td>
+</tr>
+<!-- III. Date de identificare a imputernicitului -->
+<tr>
+<td>
+    <table>
+<tr><th colspan="6">III. Date de identificare a imputernicitului</th>
+</tr>
+<tr>
+    <td>Nume</td>
+    <td><input name="Nume" ></td>
+    <td>Prenume</td>
+    <td><input name="Prenume" ></td>
+    <td>Cod numeric personal / Numar de identificare fiscala</td>
+    <td><input name="CNP" ></td>
+</tr>
+<tr>
+    <td>Email</td>
+    <td><input name="Email" ></td>
+    <td>Telefon</td>
+    <td><input name="Telefon" ></td>
+    <td>Fax</td>
+    <td><input name="Fax"></td>
+</tr>
+    </table>
+</td>
+</tr>
+</table>
+<label for="Persoana">Persoana fizica sau juridica:</label>
+<select name="Persoana" id="Persoana">
+<option value="Fizica">Fizica</option>
+<option value="Juridica">Juridica</option>
+</select>
+<ol type="A">
+<li>IV. Declar pe propria raspundere ca datele inscrise in prezentul formular sunt corecte si complete</li>
+<li>Am luat la cunostinta ca in cazul in care nu voi depune formularul in termenul prevazut de lege, voi fi obligat la plata impozitului pe venit, conform prevederilor legale in vigoare</li>
+</ol>
+<ol type="I">
+<li>Data</li>
+<li><input name="Data" size="5" ></li>
+<li>Locul</li>
+<li><input name="Locul" ></li>
+<li>Calitatea</li>
+<li><input name="Calitatea" ></li>
+</ol>
+<input type="submit" value="Trimite" >
+</form>
+</body>
+</html>
